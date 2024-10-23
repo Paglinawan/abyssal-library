@@ -112,6 +112,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Primitive Colors
         neutral: {
           0: primitiveColors.neutral[0],
           50: primitiveColors.neutral[50],
@@ -210,6 +211,31 @@ const config: Config = {
           800: primitiveColors.purple[800],
           900: primitiveColors.purple[900],
         },
+      },
+      // Semantic Colors
+      backgroundColor: {
+        al: {
+          button: {
+            primary: {
+              DEFAULT: primitiveColors.yellow[600],
+              hovered: primitiveColors.yellow[800],
+              focused: primitiveColors.yellow[800],
+            },
+            secondary: {
+              DEFAULT: primitiveColors.orange[500],
+              hovered: primitiveColors.orange[700],
+              focused: primitiveColors.orange[800],
+            },
+            disabled: {
+              DEFAULT: primitiveColors.orange[400],
+            },
+          },
+        },
+      },
+      boxShadow: {
+        "al-button-primary": `0 3px 0 ${primitiveColors.yellow[900]}`,
+        "al-button-secondary": `0 3px 0 ${primitiveColors.orange[900]}`,
+        "al-button-disabled": `0 3px 0 ${primitiveColors.neutral[600]}`,
       },
     },
   },
