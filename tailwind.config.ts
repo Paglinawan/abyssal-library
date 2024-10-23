@@ -228,7 +228,7 @@ const config: Config = {
               focused: primitiveColors.orange[800],
             },
             disabled: {
-              DEFAULT: primitiveColors.orange[400],
+              DEFAULT: primitiveColors.neutral[400],
             },
           },
         },

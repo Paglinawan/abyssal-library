@@ -17,12 +17,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: "Button",
+    label: "More",
   },
 };
 export const Secondary: Story = {
   args: {
     color: "secondary",
-    label: "Button",
+    label: "More",
+  },
+};
+export const Disabled: Story = {
+  args: {
+    color: "disabled",
+    label: "More",
   },
 };
