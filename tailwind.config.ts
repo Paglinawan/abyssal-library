@@ -106,6 +106,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -237,6 +238,14 @@ const config: Config = {
         "al-button-secondary": `0 3px 0 ${primitiveColors.orange[900]}`,
         "al-button-disabled": `0 3px 0 ${primitiveColors.neutral[600]}`,
       },
+      translate: {
+        "3px": "3px",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["hover", "focus"],
     },
   },
   plugins: [],

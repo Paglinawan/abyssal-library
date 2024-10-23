@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.al-button-primary-hovered:hover {
+  @apply bg-al-button-primary-hovered;
+}
+.al-button-primary-focused:focus {
+  @apply bg-al-button-primary-focused;
+}
+.al-button-secondary-hovered:hover {
+  @apply bg-al-button-secondary-hovered;
+}
+.al-button-secondary-focused:focus {
+  @apply bg-al-button-secondary-focused;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
